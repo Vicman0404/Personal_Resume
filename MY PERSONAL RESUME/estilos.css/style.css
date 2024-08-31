@@ -1,0 +1,156 @@
+/*General style*/
+p {
+    text-align: justify;
+}
+
+.experience {
+    gap: 1rem;
+}
+.navbar {
+    padding: 1rem;
+    background-color: #171718;
+    
+}
+.nav-link  {
+    color: aliceblue;
+}
+.navbar-colapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-circular {
+    width: 300px;       /* Ancho de la imagen */
+    height: 300px;      /* Altura de la imagen */
+    border-radius: 50%; /* Hace que los bordes sean redondeados, creando un círculo */
+    object-fit: cover;  /* Asegura que la imagen cubra todo el área del círculo sin deformarse */
+    
+}
+.see_portfolio {
+    padding: 30px; 
+
+}
+
+.skills {
+    
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;    /* Centra horizontalmente */
+    height: 60vh;          /* Altura del contenedor que ocupa toda la ventana */
+    text-align: center;     /* Centra el texto dentro de los elementos */
+    padding: 5px;
+    
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content:center; /* Centra horizontalmente */
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+
+.profile_pic {
+    background: #1e5a9e;
+    color: white;
+}
+
+h5 {
+    text-align: center;
+    line-height: 1.5; /* Espacio entre líneas de 1.5 veces la altura de la fuente */
+    letter-spacing: 2px; /* Espacio de 2px entre letras */
+    word-spacing: 3px; /* Espacio de 3px entre palabras */
+    
+    
+}
+
+.card {
+    justify-content: space-evenly;
+    height: 600px;
+    width: 350px;
+    padding: 20px;
+    margin: 20px;
+    gap: 2.5rem;
+}
+
+.card-img-top {
+    padding: 5px;
+}
+
+.col-lg-6 h2,
+.col-lg-6 h4 {
+    margin-bottom: 20px; /* Espacio entre el texto y las imágenes */
+}
+
+.col-lg-6 div {
+    display: flex;
+    justify-content: space-evenly; /* Espacio entre imágenes */
+    gap: 10px; /* Espacio entre cada imagen */
+    flex-wrap: wrap; /* Permite que las imágenes se muevan a la siguiente línea si el espacio es insuficiente */
+}
+
+.col-lg-6 img {
+    margin-bottom: 10px; /* Espacio inferior para las imágenes */
+}
+
+
+.contact {
+    background: #0c223b;
+    color: azure;
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;    /* Centra horizontalmente */
+    height: 50vh;          /* Altura del contenedor que ocupa toda la ventana */
+    text-align: center;     /* Centra el texto dentro de los elementos */
+}
+
+/* Estilos generales */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Para separar los divs horizontalmente */
+    gap: 20px; /* Espacio entre los divs */
+}
+
+.link-animation {
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width:767px) {
+    .link-animation {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+} /*Do not display the logo in small devices*/
+
+@media screen and (max-width:767px) {
+    .program {
+        width: 80px;
+        height: 80px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .image-circular {
+        width: 100px;       /* Ancho de la imagen */
+        height: 100px;      /* Altura de la imagen */
+        
+    }
+}
+/*Barra de navegacion*/
+@media screen and (max-width: 767px) {
+    .profile {
+        height: auto; /* Deja que la altura se ajuste automáticamente */
+    }
+}
